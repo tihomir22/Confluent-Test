@@ -1,0 +1,24 @@
+.movies-source-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px 0px;
+  @media only screen and (max-width: 600px) {
+    flex-wrap: wrap;
+  }
+
+  .source-card {
+    padding: 10px;
+    border: 2px solid rgba(211, 211, 211, 0.282);
+    border-radius: 10px;
+    .title,
+    .description,
+    .actions {
+      padding: 10px;
+    }
+    .actions {
+      display: flex;
+      gap: 10px;
+    }
+  }
+}

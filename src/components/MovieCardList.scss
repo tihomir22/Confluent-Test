@@ -1,0 +1,51 @@
+@import "../variables.scss";
+
+.movies-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .movie-card {
+    background-color: $colorBackgroundCards;
+    border-radius: 5px;
+    width: 100%;
+    .actions {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      .collapse-icon {
+        cursor: pointer;
+      }
+    }
+    .always-visible {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+    padding: 35px 50px;
+    margin: 10px 0px;
+    max-width: 900px;
+    .snippet-film {
+      .title {
+        margin-bottom: 10px;
+      }
+    }
+    .hidden-content {
+      margin: 10px 0px;
+      overflow: hidden;
+      height: 100%;
+      transition: height 0.2s ease-in-out;
+      .list-casts {
+       display: grid;
+       grid-template-columns: 50% 50%;
+      }
+      .separator{
+        height: 1px;
+        width: 100%;
+        background-color: lightgray;
+        margin: 10px 0px;
+      }
+    }
+  }
+}

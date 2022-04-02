@@ -1,0 +1,17 @@
+@import "../variables.scss";
+
+.title-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .short-separator {
+    width: 35px;
+    border-radius: 10px;
+    height: 5px;
+    background-color: $titleBorderColor;
+  }
+  .title{
+      font-size: 30px;
+  }
+}
